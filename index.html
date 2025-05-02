@@ -415,7 +415,7 @@
             let match;
             while ((match = keyPattern.exec(keyDisplay)) !== null) {
                 keys.push(match[1]);
-            }
+             }
             if (keys.length > 0) {
                 const keysText = keys.join('\n');
                 navigator.clipboard.writeText(keysText).then(() => {
